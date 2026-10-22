@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+
+<!-- root element -->
+<html lang="en" data-bs-theme="dark">
+
+<!-- head section -->
+<head>
+    <meta charset="UTF-8">
+    <!--for Noto Serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!--For Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+    header {
+        font-family: "Noto Serif", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    body {
+        padding: 15px;
+    }
+
+    html {
+        background-color: #f8f9fa;
+        color: #212529;
+    }
+    
+    html[data-bs-theme="dark"] {
+        background-color: #212529;
+        color: #f8f9fa;
+    }
+    
+    .card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+        border: 2px solid black;
+        padding: 2px;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+
+    .flexbox {
+        display: flex;
+        justify-content: center;
+    }
+
+    </style>
+
+    
+    <!-- webpage title -->
+    <title>
+        Matthew's Portfolio
+    </title>
+
+        <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<!-- body section --> 
+<body>
+<div> 
+    <header class="p-3 text-primary-emphasis bg-gradient bg-primary-subtle border border-primary-subtle">
+        <div class="container" class="header">
+            <!-- heading elements -->
+            <div class="row">
+            <h1 class="display-1"><i>Matthew Mancilla</i></h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid text-info-emphasis">
+                <a class="navbar-brand">Navigation</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sections
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#intro">Introduction</a></li>
+                        <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                        <li><a class="dropdown-item" href="#education-experience">Experience</a></li>
+                        <li><a class="dropdown-item" href="#resume">Resume and Contacts</a></li>
+                    </ul>
+                    <li><button id="themeToggle" class="btn btn-outline-secondary">
+                        <i class="bi bi-sun"></i> Light
+                        </button></li>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </div>
+
+    <section id="greeting" text-center></section>
+
+    <div class="container text-center bg-body" class="main-content">
+        <div class="row">
+            <div class="col">
+                <section id="intro">
+                    <h2 class="text-primary-emphasis"><u>Introduction and Aspirations</u></h2>
+
+                    <!-- body paragraphs for intro -->
+                    <p class="lead">
+                        Hello, I am Matthew and I am a sophmore NAU student in the <em>Immersive Media and Games</em> Bachelor's degree program. I desire to acquire skills in both tech and art in order to work in a creative field, such as animation or game development, and have the relevant technological expertise to excell in that field. I have a great respect for the creative process behind films, tv, and games. This is what inspired me to pursue immersive media and games.
+                    </p>
+                    <hr />
+                </section>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="row">
+            <section id="projects">
+                <div class="col">
+                    <div class="container text-center">
+                        <div class="row">
+                            
+                            <h2 class="text-primary-emphasis"><u>Projects</u></h2>
+
+                            <div class="col-12">
+                                <h3>-Birthday Invite Project-</h3>
+                                <p>
+                                    This was an intro project done to practice using image referencing, lists and hyperlinks to create a simple birthday invitation.
+                                </p>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="card">
+                                    <img src="./Images/Screenshot (22).png" class="card-img-top" class="img-fluid" 
+                                    alt="Birthday project code">
+                                    <div class="card-body">
+                                        <p class="card-text">Code made for the project.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="card">
+                                    <img src="./Images/Screenshot (23).png" class="card-img-top" class="img-fluid" 
+                                    alt="Birthday project website">
+                                    <div class="card-body">
+                                        <p class="card-text">The output of the project.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="col">
+                    <br>
+                </div>
+                <section id="project-one-state"></section>
+            
+                <div class="col">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <br>
+                                <h3>-Favorite Movies-</h3>
+                                <p>
+                                    This is another beginner project that focused on basic formatting and text display by displaying my favorite movies. I used simple HTML formatting with horizontal lines and text customization with <i>italics</i>. 
+                                </p>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="card">
+                                    <img src="./Images/Screenshot (24).png" class="card-img-top" class="img-fluid" 
+                                    alt="Favorite movie project code">
+                                    <div class="card-body">
+                                        <p class="card-text">Code made for the project.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="card">
+                                    <img src="./Images/Screenshot (25).png" class="img-fluid" class="card-img-top"
+                                    alt="Favorite movie website">
+                                    <div class="card-body">
+                                        <p class="card-text">The output of the project.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section id="project-two-state"></section>
+
+                <!--New project-->
+                <div class="col">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col-12">
+                                <br>
+                                <h3>-Portfolio(In Progress)-</h3>
+                                <p>
+                                    This is an ongoing project where I continuously add to a portfolio created using HTML, CSS, and JavaScript. Due by the end of the year. 
+                                </p>
+                                <section id="countdown">
+                                    <!--where time remaining goes-->
+                                </section>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="card">
+                                    <img src="./Images/Screenshot (58).png" class="card-img-top" class="img-fluid" 
+                                    alt="Favorite movie project code">
+                                    <div class="card-body">
+                                        <p class="card-text">Code made for the project.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="card">
+                                    <img src="./Images/Screenshot (59).png" class="img-fluid" class="card-img-top"
+                                    alt="Favorite movie website">
+                                    <div class="card-body">
+                                        <p class="card-text">The output of the project.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section id="project-three-state"></section>
+
+                <br>
+                <h2>Project Listings</h2>
+                <section id="projects-listings">
+                    <!--javascript goes here-->
+                </section>
+            </section>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="row justify-content-center">
+            <section id="education-experience">
+                <hr>
+                <br>
+                <h2 class="text-primary-emphasis"><u>Prior Education and Experience</u></h2>
+                
+                <!-- table showcasing prior education-->
+                 <div class="col">
+                    <div class="container mt-4" class="flexbox">
+                        <!--
+                        <table border="2" class="table table-responsive">
+                            <thead>
+                                <tr>
+                                    <td colspan="5"><strong>Degree Plan</strong> - <em>Immersive Media and Games</em></td>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2"><strong>Classes</strong></td>
+                                    <td class="text-center">CS 105</td>
+                                    <td class="text-center">CS 126</td>
+                                    <td class="text-center">CS 136</td>
+                                    <td class="text-center">Completed</td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td class="text-center">CS 205</td>
+                                    <td class="text-center">CS 212</td>
+                                    <td class="text-center">CS 249</td>
+                                    <td class="text-center">In Progress</td>
+                                </tr>
+                            </tbody>
+                                <tr>
+                                    <td colspan="5" class="text-center">
+                                        Pursued over the course of 2 years at NAU
+                                    </td>
+                                </tr>
+                            <tfoot>
+
+                            </tfoot>
+                        </table>
+                    -->
+        
+                        <h3>Experience</h3>
+                        <section id="experience-table"></section>
+                        <br>
+                        <h3>Education</h3>
+                        <section id="education-table"></section>
+                        <br>
+                    </div>
+                    
+                </div>
+                
+                <p>
+                    My prior experience in computer science is limited only to what I've learned at NAU in my CS courses. <em>However</em>, I do have a very small amount of experience with HTML from a tech literacy class from highschool, which I believe will become more useful as I progress in learning web development. 
+                </p>
+
+                <br>
+                
+                <h3 class="text-primary-emphasis"><u>Skills</u></h3>
+                <div class="skills">
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li>
+                            Basic foundational programming ability.
+                        </li>
+                        <li class="important-skill">
+                            Able to work in multiple notable programming languages and significant web design tools:
+                            <ol style="list-style: none; padding: 0; margin: 0;">
+                                <li>Python</li>
+                                <li>C</li>
+                                <li>C++</li>
+                                <li>HTML</li>
+                            </ol>
+                        </li>
+                        <li>
+                            Understanding error messages and the debugging process
+                        </li>
+                        <li>
+                            Able to navigate and work inside the command line and terminal
+                        </li>
+                        <li>
+                            Capable of analyzing a programming task and methodically working through it
+                        </li>
+                    </ul>
+
+                    <br>
+                    <div class="container">
+                        <h2 id="customText" class="p-3 border rounded">Customizable Text Box</h2>
+
+                        <form class="row g-3">
+                            <div class="col-md-4">
+                                <label class="form-label">Font Size (px)</label>
+                                <input type="number" id="fontSizeInput" class="form-control" min="10" max="100" value="20">
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label">Background Color</label>
+                                <input type="color" id="bgColorInput" class="form-control" value="#ffffff">
+                            </div>
+
+                            <div class="col-md-4">
+                                <label class="form-label">Text Color</label>
+                                <input type="color" id="textColorInput" class="form-control" value="#000000">
+                            </div>
+                        </form>
+                    </div>
+
+                    <br>
+
+                    <h3>Input skill: </h3>
+                        <form onsubmit="return processForm()">
+                            <label>Enter a skill:</label>
+                            <input type="text" id="userSkill" placeholder="Type a skill" required>
+                            <button type="submit">Submit</button>
+                        </form>
+                </div>
+                <hr />
+            </section>
+        </div>
+
+    </div>
+
+    <!--footer section-->
+    <footer class="p-3 text-primary-emphasis bg-gradient bg-primary-subtle border border-primary-subtle">
+        <div class="container text-center" class="footer">
+            <div class="row">
+                <!-- resume section -->
+                <section id="resume">
+                    <h2><u>Resume</u></h2>
+                    <button id="resume_download" type="button" class="btn btn-primary">
+                        <p>
+                            Download my resume here:
+                            <br>
+                            <a href="Matthew_Mancilla_Resume.pdf" download="Matthew Mancilla's Resume">
+                                Resume (PDF)
+                            </a>
+                            <section id="download_display">
+                                <!--javascript goes here-->
+                            </section>
+                        </p>
+                    </button>
+                </section>
+
+
+                <!-- Contact Section -->
+                <section id="contact">
+                    <br>
+                    <h2><u>Contact Information</u></h2>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li>
+                            Personal Email: 
+                            <a href="mailto:mattmanc1166@gmail.com">
+                                mattmanc1166@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            School Email: 
+                            <a href="mailto:mjm2389@nau.edu">
+                                mjm2389@nau.edu
+                            </a>
+                        </li>
+                        <li>
+                            Phone: 
+                            <a href="callto:6267227945">
+                                (626) 722-7945
+                            </a>
+                        </li>
+                        <li>
+                            Github: 
+                            <a href="https://github.com/Hallo-M06">
+                                Hallo_M06
+                            </a>
+                        </li>
+                    </ul>
+                    <hr />
+                </section>
+            
+                
+            
+            </div>
+        </div>
+
+        
+    </footer>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+  
+</html>
