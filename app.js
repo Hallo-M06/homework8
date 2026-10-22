@@ -249,21 +249,3 @@ document.getElementById('themeToggle').addEventListener('click', function darkMo
   
   html.setAttribute('data-bs-theme', newTheme);
 });
-
-const customText = document.getElementById('customText');
-const fontSizeInput = document.getElementById('fontSizeInput');
-const bgColorInput = document.getElementById('bgColorInput');
-const textColorInput = document.getElementById('textColorInput');
-
-// Apply changes instantly
-fontSizeInput.addEventListener('input', function fontSizeChange()  {
-    customText.style.fontSize = fontSizeInput.value + 'px';
-});
-
-bgColorInput.addEventListener('input', function bgColorChange() {
-    customText.style.backgroundColor = bgColorInput.value;
-});
-
-textColorInput.addEventListener('input', function textColorChange() {
-    customText.style.color = textColorInput.value;
-});
